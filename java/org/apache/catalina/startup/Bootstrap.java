@@ -254,6 +254,7 @@ public final class Bootstrap {
      */
     public void init() throws Exception {
 
+    	//初始化类加载器
         initClassLoaders();
 
         Thread.currentThread().setContextClassLoader(catalinaLoader);
@@ -451,6 +452,7 @@ public final class Bootstrap {
 
 
     /**
+     * tomcat启动入口
      * Main method and entry point when starting Tomcat via the provided
      * scripts.
      *
